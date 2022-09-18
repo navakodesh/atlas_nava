@@ -5,7 +5,6 @@
 body {
     margin: 0px;
     font-family: 'Amatic SC', cursive;
-
 }
 
 .container-fluid{
@@ -44,6 +43,11 @@ header .nav ul li{
 padding:8px;
 }
 
+header .nav ul li:nth-last-of-type(1){
+    border: none;
+
+}
+
 header .nav ul li a{
 text-decoration: none;
 font-weight: 600;
@@ -69,12 +73,11 @@ main {
     background-size: cover;
     display: flex;
     padding: 48px;
-    background-color: rgba(255, 255, 255, 0.596);
     min-height: 550px;
 }
 
 main .container{
-    background-color: rgba(255, 255, 255, 0.596);
+    background-color: rgba(255, 255, 255, 0.733);
 }
 
 main .container img{
@@ -91,13 +94,29 @@ main .container h2{
     }
 
 @media (max-width:768px) {
+    body {
+        margin: 0px;
+        font-family:sans-serif;
+    }
     header{
         min-height: 170px;
     }
     main .container .p{
         padding-left: 48px;
+        margin-top: 4px !important;
     }
     main .container h5{
         padding-left: 48px;
+        margin-top: 4px !important;
+
     }
+    main .container img{
+        width: 200px;
+        margin-bottom: 0 !important;
+        }
+        main .container iframe{
+            width: 200px;
+            margin-bottom: 8px !important;
+
+            }
 }
